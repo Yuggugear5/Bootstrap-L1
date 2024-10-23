@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head></head>
+ <body>
+    <p id="b"></p>
+    <p id="demo"></p>
+    <script>
+        var Str="YuGaNkSh"
+        document.write(Str.toLowerCase())
+        document.write("<br>")
+        document.write(Str.toUpperCase())
+
+        var fruits=["Mango", "Dragon Fruit", "Water Melon", "Straw Barry"];
+        var a="";
+        var i;
+        for(i = 0;i<fruits.length;i++){
+            a+=fruits[i]+"<br>"
+    
+        }
+       document.getElementById("b").innerHTML=a
+
+       var day;
+       switch (new Date().getDay()) {
+         case 0:
+           day = "Sunday";
+           break;
+         case 1:
+           day = "Monday";
+           break;
+         case 2:
+           day = "Tuesday";
+           break;
+         case 3:
+           day = "Wedesday";
+           break;
+         case 4:
+           day = "Thursday";
+           break;
+         case 5:
+           day = "Friday";
+           break;
+         case 6:
+           day = "Saturday";     
+       }
+       document.getElementById("demo").innerHTML = "Today is" + day;
+    </script>
+ </body>   
+</html>
