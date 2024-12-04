@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="Asscending()">Asscending</button>
+        <button onclick="Decending()">Decending</button>
+        <p id="result"></p>
+        <p id="product_value"></p>
+        <button onclick="Yuganksh()">Yuganksh</button>
+        <p id="S"></p>
+        <script>
+            var points =[999, 8888, 567, 95, 8, 12]
+            document.getElementById("result").innerHTML=points
+
+            function Asscending(){
+            points.sort(function(a,b){return a -b});
+            document.getElementById("result").innerHTML=points 
+            }
+            function Decending(){
+            points.sort(function(a,b){return b -a});
+            document.getElementById("result").innerHTML=points
+            } 
+
+            var numbers = [28, 6, 19, 95];
+
+            function myFunction(num) {
+              return num * 10;  
+            }
+            var newarray = numbers.map(myFunction);
+            document.getElementById("product_value").innerHTML =
+            newarray;
+            
+            function Yuganksh(){
+                var a = 56
+                var b = 95
+                var x = eval("a + b")
+                var y = eval("a * b")
+                var v = eval("a - b")
+
+                var res = x + y + v
+             document.getElementById("S").innerHTML = res
+            }
+        </script>
+    </body>
+</html>
