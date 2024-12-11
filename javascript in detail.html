@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="Java"></p>
+        <h1 id="Docker"></h1>
+        <h1 id="C++"></h1>
+        <h1 id="Python"></h1>
+        <script>
+            x = 8
+            y = 95
+            document.getElementById("Java").innerHTML = x + y
+            document.getElementById("Docker").innerHTML = String(x) + String(y)
+
+            try{
+            Yuganksh("Flask")
+            }
+            catch(err){
+             document.getElementById("C++").innerHTML = err.message
+            }
+
+
+            Yuganksh = (y,s) => y+s;
+            document.getElementById("Python").innerHTML = Yuganksh(77,45)
+        </script>
+    </body>
+</html>
