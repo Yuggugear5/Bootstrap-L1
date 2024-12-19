@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+   <p id="demo"></p>
+   <p id="ruby"></p>
+   <p id="java"></p>
+   <p id="react"></p>
+   <p id="perl"></p>
+    </body>
+    <script>
+        var a ={"name":"Yuganksh","age":12,"grade":7}
+        var b =JSON.stringify(a)
+        var c =JSON.parse(b)   
+        document.getElementById("demo").innerHTML = "Hi I am"+c.name + " I am " + a.age + " years old " + "and I am in " + a.grade +"th grade"
+
+      function add(a,b){
+             return a + b
+      }
+      document.getElementById("ruby").innerHTML = add (95,82)
+
+      function sub(a,b){
+             return a - b 
+      }
+      document.getElementById("java").innerHTML = sub (69,45)
+
+      function div(a,b){
+             return a / b
+      }
+      document.getElementById("react").innerHTML = div (376,47)
+
+      function mul(a,b){
+             return a * b
+      }
+      document.getElementById("perl").innerHTML = mul (32,19)
+    </script>
+</html>
